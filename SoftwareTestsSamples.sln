@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoadTests", "LoadTests", "{
 		LoadTests\performance-test-plan.jmx = LoadTests\performance-test-plan.jmx
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automated-End2End-BDD.Tests", "Automated-End2End-BDD.Tests\Automated-End2End-BDD.Tests.csproj", "{C105C2A9-83F9-47A9-BCFC-0EFC2A213D01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{27BB950C-A55E-4564-8B61-9576652E6D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27BB950C-A55E-4564-8B61-9576652E6D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27BB950C-A55E-4564-8B61-9576652E6D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C105C2A9-83F9-47A9-BCFC-0EFC2A213D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C105C2A9-83F9-47A9-BCFC-0EFC2A213D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C105C2A9-83F9-47A9-BCFC-0EFC2A213D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C105C2A9-83F9-47A9-BCFC-0EFC2A213D01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
