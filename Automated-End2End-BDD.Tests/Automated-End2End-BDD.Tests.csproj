@@ -9,7 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="selenium.support" Version="4.5.1" />
+    <PackageReference Include="selenium.webdriver" Version="4.5.1" />
+    <PackageReference Include="SeleniumExtras.WaitHelpers" Version="1.0.2" />
     <PackageReference Include="Specflow" Version="3.9.74" />
     <PackageReference Include="SpecFlow.xUnit" Version="3.9.74" />
     <PackageReference Include="xunit" Version="2.4.1" />
@@ -21,6 +25,12 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Configuration\appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
