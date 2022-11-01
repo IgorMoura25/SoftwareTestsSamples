@@ -1,3 +1,4 @@
+using System;
 using TechTalk.SpecFlow;
 
 namespace Automated_End2End_BDD.Tests.User.StepDefinitions
@@ -5,20 +6,14 @@ namespace Automated_End2End_BDD.Tests.User.StepDefinitions
     [Binding]
     public class User_RegistrationStepDefinitions
     {
-        [Given(@"the visitor is browsing the website")]
-        public void GivenTheVisitorIsBrowsingTheWebsite()
-        {
-            throw new PendingStepException();
-        }
-
         [When(@"he clicks in Create Your Account")]
         public void WhenHeClicksInCreateYourAccount()
         {
             throw new PendingStepException();
         }
 
-        [When(@"fill the form with data")]
-        public void WhenFillTheFormWithData(Table table)
+        [When(@"fill the registration form with data")]
+        public void WhenFillTheRegistrationFormWithData(Table table)
         {
             throw new PendingStepException();
         }
@@ -29,20 +24,8 @@ namespace Automated_End2End_BDD.Tests.User.StepDefinitions
             throw new PendingStepException();
         }
 
-        [Then(@"he will be redirected to the catalog")]
-        public void ThenHeWillBeRedirectedToTheCatalog()
-        {
-            throw new PendingStepException();
-        }
-
-        [Then(@"his e-mail will appear in the top right menu")]
-        public void ThenHisE_MailWillAppearInTheTopRightMenu()
-        {
-            throw new PendingStepException();
-        }
-
-        [When(@"fill the form with data with a password without Upper Case letter")]
-        public void WhenFillTheFormWithDataWithAPasswordWithoutUpperCaseLetter(Table table)
+        [When(@"fill the registration form with data with a password without Upper Case letter")]
+        public void WhenFillTheRegistrationFormWithDataWithAPasswordWithoutUpperCaseLetter(Table table)
         {
             throw new PendingStepException();
         }
@@ -59,8 +42,8 @@ namespace Automated_End2End_BDD.Tests.User.StepDefinitions
             throw new PendingStepException();
         }
 
-        [When(@"fill the form with data with a password without special character")]
-        public void WhenFillTheFormWithDataWithAPasswordWithoutSpecialCharacter(Table table)
+        [When(@"fill the registration form with data with a password without special character")]
+        public void WhenFillTheRegistrationFormWithDataWithAPasswordWithoutSpecialCharacter(Table table)
         {
             throw new PendingStepException();
         }

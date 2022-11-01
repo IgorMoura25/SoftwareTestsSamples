@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Automated_End2End_BDD.Tests.User
+namespace Automated_End2End_BDD.Tests.User.Feature
 {
     using TechTalk.SpecFlow;
     using System;
@@ -40,7 +40,7 @@ namespace Automated_End2End_BDD.Tests.User
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "User", "User - Registration", "\tAs a visitor\r\n\tI want to register myself as a User\r\n\tSo I can use the functional" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "User/Feature", "User - Registration", "\tAs a visitor\r\n\tI want to register myself as a User\r\n\tSo I can use the functional" +
                     "ities of the website", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -105,16 +105,16 @@ this.ScenarioInitialize(scenarioInfo);
 #line 8
  testRunner.When("he clicks in Create Your Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "Data"});
-                table1.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "E-mail"});
-                table1.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Password"});
-                table1.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Password Confirmation"});
 #line 9
- testRunner.And("fill the form with data", ((string)(null)), table1, "And ");
+ testRunner.And("fill the registration form with data", ((string)(null)), table2, "And ");
 #line hidden
 #line 14
  testRunner.And("click in Register button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -153,16 +153,16 @@ this.ScenarioInitialize(scenarioInfo);
 #line 20
  testRunner.When("he clicks in Create Your Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "Data"});
-                table2.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "E-mail"});
-                table2.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Password"});
-                table2.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Password Confirmation"});
 #line 21
- testRunner.And("fill the form with data with a password without Upper Case letter", ((string)(null)), table2, "And ");
+ testRunner.And("fill the registration form with data with a password without Upper Case letter", ((string)(null)), table3, "And ");
 #line hidden
 #line 26
  testRunner.Then("the Register button will not be able to be clicked", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -199,16 +199,16 @@ this.ScenarioInitialize(scenarioInfo);
 #line 31
  testRunner.When("he clicks in Create Your Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
                             "Data"});
-                table3.AddRow(new string[] {
+                table4.AddRow(new string[] {
                             "E-mail"});
-                table3.AddRow(new string[] {
+                table4.AddRow(new string[] {
                             "Password"});
-                table3.AddRow(new string[] {
+                table4.AddRow(new string[] {
                             "Password Confirmation"});
 #line 32
- testRunner.And("fill the form with data with a password without special character", ((string)(null)), table3, "And ");
+ testRunner.And("fill the registration form with data with a password without special character", ((string)(null)), table4, "And ");
 #line hidden
 #line 37
  testRunner.Then("the Register button will not be able to be clicked", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");

@@ -6,7 +6,7 @@
 Scenario: Register user successfully
 	Given the visitor is browsing the website
 	When he clicks in Create Your Account
-	And fill the form with data
+	And fill the registration form with data
 			| Data                  |
 			| E-mail                |
 			| Password              |
@@ -18,7 +18,7 @@ Scenario: Register user successfully
 Scenario: Register without Upper Case letter in password
 	Given the visitor is browsing the website
 	When he clicks in Create Your Account
-	And fill the form with data with a password without Upper Case letter
+	And fill the registration form with data with a password without Upper Case letter
 			| Data                  |
 			| E-mail                |
 			| Password              |
@@ -29,7 +29,7 @@ Scenario: Register without Upper Case letter in password
 Scenario: Register without special character in password
 	Given the visitor is browsing the website
 	When he clicks in Create Your Account
-	And fill the form with data with a password without special character
+	And fill the registration form with data with a password without special character
 			| Data                  |
 			| E-mail                |
 			| Password              |

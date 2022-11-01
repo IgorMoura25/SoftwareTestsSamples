@@ -1,3 +1,4 @@
+using System;
 using TechTalk.SpecFlow;
 
 namespace Automated_End2End_BDD.Tests.User.StepDefinitions
@@ -5,14 +6,14 @@ namespace Automated_End2End_BDD.Tests.User.StepDefinitions
     [Binding]
     public class User_LoginStepDefinitions
     {
-        [Given(@"the registered user is browsing the website")]
-        public void GivenTheRegisteredUserIsBrowsingTheWebsite()
+        [When(@"he clicks in Enter")]
+        public void WhenHeClicksInEnter()
         {
             throw new PendingStepException();
         }
 
-        [When(@"he clicks in Enter")]
-        public void WhenHeClicksInEnter()
+        [When(@"fill the login form with data")]
+        public void WhenFillTheLoginFormWithData(Table table)
         {
             throw new PendingStepException();
         }

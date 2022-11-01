@@ -4,9 +4,9 @@
 	So I can use the functionalities of the website
 
 Scenario: User login successfully
-	Given the registered user is browsing the website
+	Given the visitor is browsing the website
 	When he clicks in Enter
-	And fill the form with data
+	And fill the login form with data
 			| Data                  |
 			| E-mail                |
 			| Password              |
