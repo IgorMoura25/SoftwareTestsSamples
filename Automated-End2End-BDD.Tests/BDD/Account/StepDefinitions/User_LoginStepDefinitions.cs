@@ -1,7 +1,6 @@
-using System;
 using TechTalk.SpecFlow;
 
-namespace Automated_End2End_BDD.Tests.User.StepDefinitions
+namespace Automated_End2End_BDD.Tests.BDD.Account.StepDefinitions
 {
     [Binding]
     public class User_LoginStepDefinitions

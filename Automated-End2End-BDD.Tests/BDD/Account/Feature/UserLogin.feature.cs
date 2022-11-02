@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Automated_End2End_BDD.Tests.User.Feature
+namespace Automated_End2End_BDD.Tests.BDD.Account.Feature
 {
     using TechTalk.SpecFlow;
     using System;
@@ -40,7 +40,7 @@ namespace Automated_End2End_BDD.Tests.User.Feature
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "User/Feature", "User - Login", "\tAs a Registered User\r\n\tI want to login\r\n\tSo I can use the functionalities of the" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD/Account/Feature", "User - Login", "\tAs a Registered User\r\n\tI want to login\r\n\tSo I can use the functionalities of the" +
                     " website", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
