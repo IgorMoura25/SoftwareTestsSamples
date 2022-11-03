@@ -26,6 +26,9 @@ namespace Automated_End2End_BDD.Tests.Configuration
             // Para maximizar e ocupar a tela inteira
             WebDriver.Manage().Window.Maximize();
 
+            // Para aguardar carregamento da tela
+            WebDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+
             // Um timeout padrão (30 segs)
             Wait = new WebDriverWait(WebDriver, TimeSpan.FromSeconds(30));
         }
@@ -90,6 +93,11 @@ namespace Automated_End2End_BDD.Tests.Configuration
         public string GetElementTextById(string id)
         {
             return Wait.Until(ExpectedConditions.ElementIsVisible(By.Id(id))).Text;
+        }
+
+        public string GetElementTextByXPath(string xPath)
+        {
+            return Wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(xPath))).Text;
         }
 
         public string GetElementValueById(string id)

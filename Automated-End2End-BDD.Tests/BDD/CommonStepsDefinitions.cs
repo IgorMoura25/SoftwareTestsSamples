@@ -11,36 +11,41 @@ namespace Automated_End2End_BDD.Tests.BDD
     {
         private readonly MainFixture _mainFixture;
         private readonly CatalogPage _catalogPage;
+        private readonly AccountRegisterPage _registerPage;
 
         public CommonStepsDefinitions(MainFixture mainFixture)
         {
             _mainFixture = mainFixture;
             _catalogPage = new CatalogPage(_mainFixture.SeleniumHelper);
+            _registerPage = new AccountRegisterPage(_mainFixture.SeleniumHelper);
         }
 
         [Given(@"the visitor is browsing the website")]
         public void GivenTheVisitorIsBrowsingTheWebsite()
         {
-            // Arrange
-            var expectedUrl = _mainFixture.SeleniumHelper.CombineWithDomainUrl(_mainFixture.Configuration.CatalogUrl);
-
-            // Act
+            // Arrange & Act
             _catalogPage.GoToCatalog();
 
             // Assert
-            Assert.Contains(expectedUrl, _catalogPage.GetCurrentUrl());
+            Assert.Contains(_mainFixture.Configuration.DomainUrl, _catalogPage.GetCurrentUrl());
         }
 
         [Then(@"he will be redirected to the catalog")]
         public void ThenHeWillBeRedirectedToTheCatalog()
         {
-            throw new PendingStepException();
+            // Assert
+            Assert.True(_catalogPage.IsCatalogPage());
         }
 
         [Then(@"his e-mail will appear in the top right menu")]
         public void ThenHisE_MailWillAppearInTheTopRightMenu()
         {
-            throw new PendingStepException();
+            // Assert
+
+            var email = _registerPage.ValidateEmailInTheTopRightMenu(_mainFixture.UserFixture.User.Email ?? string.Empty);
+
+            // Está fixo no frontend por testes
+            Assert.True(_registerPage.ValidateEmailInTheTopRightMenu("pegar-email-do-token@teste.com"));
         }
     }
 }

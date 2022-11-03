@@ -14,10 +14,14 @@ namespace Automated_End2End_BDD.Tests.Fixtures
         public readonly SeleniumHelper SeleniumHelper;
         public readonly ConfigurationHelper Configuration;
 
+        public readonly UserFixture UserFixture;
+
         public MainFixture()
         {
             Configuration = new ConfigurationHelper();
             SeleniumHelper = new SeleniumHelper(Browser.Chrome, Configuration, false);
+
+            UserFixture = new UserFixture();
         }
     }
 }

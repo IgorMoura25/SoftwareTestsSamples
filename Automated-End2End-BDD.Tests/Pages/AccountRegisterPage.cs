@@ -12,6 +12,13 @@ namespace Automated_End2End_BDD.Tests.Pages
             Helper.GetElementByXPath("/html/body/app-root/app-navigation-header/header/nav/div/div/app-navigation-header-login/ul/li[2]/a").Click();
         }
 
+        public bool IsRegisterPage()
+        {
+            var text = Helper.GetElementTextByXPath("/html/body/app-root/app-identity-root/app-identity-account/div/h1");
+
+            return text.Contains("Cadastro");
+        }
+
         public void FillRegisterForm(RegisterFormModel form)
         {
             Helper.FillTextInputById("email", form.Email);
@@ -26,6 +33,11 @@ namespace Automated_End2End_BDD.Tests.Pages
             if (Helper.GetElementTextById("passwordConfirmation") != form.ConfirmPassword) return false;
 
             return true;
+        }
+
+        public bool CanClickRegisterButton()
+        {
+            return Helper.GetElementById("register").Enabled;
         }
 
         public void ClickRegisterButton()

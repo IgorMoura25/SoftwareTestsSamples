@@ -18,5 +18,26 @@ namespace Automated_End2End_BDD.Tests.Pages
         {
             return Helper.GetUrl();
         }
+
+        public bool ValidateEmailInTheTopRightMenu(string email)
+        {
+            var text = Helper.GetElementTextByXPath("/html/body/app-root/app-navigation-header/header/nav/div/div/app-navigation-header-login/ul/li[1]/a");
+
+            return text.Contains(email);
+        }
+
+        public bool ValidateInvalidPasswordErrorMessage()
+        {
+            var text = Helper.GetElementTextByXPath("/html/body/app-root/app-identity-root/app-identity-account/div/form/div[2]/div/span/p");
+
+            return text.Contains("A senha precisa ter pelo menos uma letra maiúscula, uma letra minúscula, um número e um caracter especial");
+        }
+
+        public bool ValidateInvalidConfirmPasswordErrorMessage()
+        {
+            var text = Helper.GetElementTextByXPath("/html/body/app-root/app-identity-root/app-identity-account/div/form/div[3]/div/span/p");
+
+            return text.Contains("A senha precisa ter pelo menos uma letra maiúscula, uma letra minúscula, um número e um caracter especial");
+        }
     }
 }
