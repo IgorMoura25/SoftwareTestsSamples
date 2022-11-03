@@ -19,7 +19,7 @@ namespace Automated_End2End_BDD.Tests.Fixtures
         public MainFixture()
         {
             Configuration = new ConfigurationHelper();
-            SeleniumHelper = new SeleniumHelper(Browser.Chrome, Configuration, false);
+            SeleniumHelper = new SeleniumHelper(Browser.Chrome, Configuration);
 
             UserFixture = new UserFixture();
         }
