@@ -38,6 +38,11 @@ namespace Automated_End2End_BDD.Tests.Configuration
             return WebDriver.Url;
         }
 
+        public string CombineWithDomainUrl(string path)
+        {
+            return $"{Configuration.DomainUrl}{path}";
+        }
+
         public bool ContainsInUrl(string text)
         {
             return Wait.Until(ExpectedConditions.UrlContains(text));
@@ -75,6 +80,11 @@ namespace Automated_End2End_BDD.Tests.Configuration
         public IWebElement GetElementByXPath(string xPath)
         {
             return Wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(xPath)));
+        }
+
+        public IWebElement GetElementById(string id)
+        {
+            return Wait.Until(ExpectedConditions.ElementIsVisible(By.Id(id)));
         }
 
         public string GetElementTextById(string id)
